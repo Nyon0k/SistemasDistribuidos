@@ -1,20 +1,5 @@
 #Cliente
 
-def validadorCliente(s_msg):
-    palavras = []
-    try:
-        arq = open(s_msg, 'r')
-        for linha in arq:
-            for palavra in linha.split():
-                palavras.append(palavra)
-        palavras.sort()
-        print(palavras)
-        arq.close()
-        return True
-    except:
-        print('CLIENT_ERROR -- Arquivo não encontrado!')
-        return False
-
 import socket
 HOST = '192.168.68.104'
 PORTA = 5000
