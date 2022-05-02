@@ -1,8 +1,8 @@
 #Cliente
 
 import socket
-HOST = '192.168.68.104'
-PORTA = 5000
+HOST = '192.168.68.105'
+PORTA = 5001
 
 #criar o descritor de socket
 sock = socket.socket() #AF_INET, SOCK_STREAM
@@ -32,4 +32,3 @@ while True:
         sock.close()
         break
     print(str(msg, encoding = 'utf-8'))
-    
